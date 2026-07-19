@@ -9,7 +9,7 @@ const PROMPT_DATA = {
   meta: {
     title: "Prompt Toolkit Generator",
     subtitle:
-      "Pick from each list below. Every choice maps to a ready-made prompt component — mix and match to build a plug-and-play prompt.",
+      "Tired of trying to come up with the perfect prompt? We've built this tool to remove the guesswork from learning prompting best practices"
   },
 
   // Single-select groups rendered as <select> dropdowns.
@@ -22,13 +22,12 @@ const PROMPT_DATA = {
       help: "Who should the AI act as?",
       placeholder: "— None —",
       options: [
-        { key: "expert_consultant", label: "Expert Consultant", text: "You are a seasoned expert consultant in this field, known for precise, well-reasoned advice." },
+        { key: "Consultant", label: "Consultant", text: "You are a seasoned expert consultant in this field, known for precise, well-reasoned advice." },
         { key: "teacher", label: "Teacher", text: "You are a patient, encouraging teacher who explains concepts clearly." },
         { key: "editor", label: "Editor", text: "You are a meticulous editor focused on clarity, grammar, and structure." },
         { key: "coach", label: "Coach", text: "You are a supportive coach who motivates while giving honest feedback." },
         { key: "analyst", label: "Data Analyst", text: "You are a data-driven analyst who backs claims with evidence." },
         { key: "engineer", label: "Software Engineer", text: "You are a senior software engineer who writes clean, maintainable code." },
-        { key: "creative_writer", label: "Creative Writer", text: "You are an imaginative creative writer with a distinctive voice." },
         { key: "researcher", label: "Researcher", text: "You are a thorough researcher who verifies facts before stating them." },
         { key: "product_manager", label: "Product Manager", text: "You are a pragmatic product manager balancing user needs and business goals." },
         { key: "lawyer", label: "Lawyer", text: "You are a detail-oriented lawyer who reasons carefully about implications and risk." },
@@ -68,7 +67,7 @@ const PROMPT_DATA = {
       placeholder: "— None —",
       options: [
         { key: "general", label: "General Public", text: "Write for a general audience with no specialized background." },
-        { key: "beginners", label: "Beginners", text: "Assume the reader is a complete beginner to this topic." },
+        { key: "Advice", label: "Advice", text: "Write for a audience who needs advice in this area" },
         { key: "experts", label: "Experts", text: "Assume the reader is an expert and skip basic explanations." },
         { key: "executives", label: "Executives", text: "Write for busy executives who want the bottom line first." },
         { key: "students", label: "Students", text: "Write for students who are actively learning the subject." },

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Prompt Toolkit Generator</title>
+<title>Prompt Generator</title>
 <meta name="description" content="A plug-and-play, rule-based prompt generator. Pick options from each list and build a ready-to-use AI prompt." />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -33,28 +33,6 @@
 
     <div class="card" id="constraints-card"><!-- rendered by app.js --></div>
 
-    <div class="card actions-card">
-      <h2>Actions</h2>
-      <div class="actions-row">
-        <button type="button" id="randomize-btn" class="btn">🎲 Randomize</button>
-        <button type="button" id="reset-btn" class="btn btn-ghost">Reset</button>
-      </div>
-
-      <div class="presets">
-        <label for="preset-name">Save current selection as preset</label>
-        <div class="preset-row">
-          <input type="text" id="preset-name" placeholder="Preset name" />
-          <button type="button" id="save-preset-btn" class="btn btn-small">Save</button>
-        </div>
-        <div class="preset-row">
-          <select id="preset-select">
-            <option value="">— Load a saved preset —</option>
-          </select>
-          <button type="button" id="load-preset-btn" class="btn btn-small btn-ghost">Load</button>
-          <button type="button" id="delete-preset-btn" class="btn btn-small btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
 
   </section>
 
@@ -67,7 +45,6 @@
       <textarea id="output" readonly aria-live="polite" placeholder="Your assembled prompt will appear here as you make selections…"></textarea>
       <div class="actions-row">
         <button type="button" id="copy-btn" class="btn">📋 Copy</button>
-        <button type="button" id="download-btn" class="btn btn-ghost">⬇ Download .txt</button>
       </div>
       <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
     </div>
@@ -75,11 +52,6 @@
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>Rule-based prompt toolkit — pure HTML, CSS &amp; JS. No accounts, no server, nothing leaves your browser.</p>
-  </div>
-</footer>
 
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
